@@ -15,7 +15,7 @@ public class BankServer {
             String serverIP = InetAddress.getLocalHost().getHostAddress();
             int port = 3000; // RMI registry port
 
-            // Ensure RMI registry is running
+            // Ensures RMI registry is running
             try {
                 Registry registry = LocateRegistry.getRegistry(port);
                 registry.list(); // Test if registry responds
@@ -27,8 +27,8 @@ public class BankServer {
 
             // Database connection setup
             String url = "jdbc:mysql://localhost:3306/bankdatabase";
-            String user = "root";  // Change this based on your MySQL setup
-            String password = "PHW#84#vic";  // Update if your database has a password
+            String user = "root";  
+            String password = "PHW#84#vic";  
 
             Connection connection = DriverManager.getConnection(url, user, password);
             System.out.println("Connected to the database successfully!");

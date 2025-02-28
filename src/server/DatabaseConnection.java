@@ -12,7 +12,7 @@ public class DatabaseConnection {
     // Method to get a new connection
     public static Connection getConnection() throws SQLException {
         try {
-            // Load MySQL driver (only needed once)
+            // Load MySQL driver 
             Class.forName("com.mysql.cj.jdbc.Driver");
             
             // Create a new connection each time

@@ -24,7 +24,7 @@ public class BankClient {
             String registryURL = "//" + serverIP.trim() + ":" + port + "/BankAccount";
             account = (Account) Naming.lookup(registryURL);
 
-            // Create the GUI
+            // Creating the GUI
             createGUI();
 
         } catch (Exception e) {
@@ -96,7 +96,7 @@ public class BankClient {
             }
         });
 
-        // Add components to panel
+        // Adding components to panel
         panel.add(new JLabel("Current Balance:"));
         panel.add(labelBalance);
         panel.add(new JLabel("Amount:"));
@@ -106,7 +106,7 @@ public class BankClient {
         panel.add(new JLabel("Status:"));
         panel.add(statusLabel);
 
-        // Add panel to frame
+        // Adding panel to frame
         frame.add(panel, BorderLayout.CENTER);
         frame.setVisible(true);
     }
