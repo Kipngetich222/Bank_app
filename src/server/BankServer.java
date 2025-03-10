@@ -26,9 +26,9 @@ public class BankServer {
             }
 
             // Database connection setup
-            String url = "jdbc:mysql://localhost:3306/bankdatabase";
-            String user = "root";  
-            String password = "PHW#84#vic";  
+            String url = "jdbc:mysql://192.168.137.10:3306/bankdatabase";
+            String user = "bank_admin";  
+            String password = "KISII_Bank@254";  
 
             Connection connection = DriverManager.getConnection(url, user, password);
             System.out.println("Connected to the database successfully!");

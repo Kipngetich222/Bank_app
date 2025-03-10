@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DatabaseConnection {
-    private static final String URL = "jdbc:mysql://localhost:3306/Bankdatabase?useSSL=false&allowPublicKeyRetrieval=true";
-    private static final String USER = "root"; 
-    private static final String PASSWORD = "PHW#84#vic"; 
+    private static final String URL = "jdbc:mysql://192.168.137.10:3306/Bankdatabase?useSSL=false&allowPublicKeyRetrieval=true";
+    private static final String USER = "bank_admin"; 
+    private static final String PASSWORD = "KISII_Bank@254"; 
 
     // Method to get a new connection
     public static Connection getConnection() throws SQLException {

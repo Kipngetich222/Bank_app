@@ -19,6 +19,7 @@ VALUES ('123456789', 'John Doe', 5000.00);
 INSERT INTO transactions (account_number, transaction_type, amount) 
 VALUES ('123456789', 'deposit', 2000.00), 
        ('123456789', 'withdraw', 1000.00);
-CREATE USER 'bank_admin'@'localhost' IDENTIFIED BY "KISII_Bank@254";
-GRANT ALL PRIVILEGES ON BankDatabase.* TO 'bank_admin'@'localhost';
+DROP user bank_admin@localhost;
+CREATE USER 'bank_admin'@'%' IDENTIFIED BY "KISII_Bank@254";
+GRANT ALL PRIVILEGES ON BankDatabase.* TO 'bank_admin'@'%';
 -- end
